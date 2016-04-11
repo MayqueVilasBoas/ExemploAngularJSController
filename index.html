@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="testeAplicacao">
+  <head>
+    <meta charset="utf-8">
+    <title>Aplicação teste controller</title>
+
+    <!--DECLARAÇÃO DO JQUERY-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!--DECLARAÇÃO DO ANGULAR JS-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+    <!--DECLARAÇÃO DO BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!--DECLARAÇÃO DO ANGULAR JS-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+
+    <!--DECLARAÇÃO DO ARQUIVO JS QUE ESTÁ O CONTROLLER-->
+    <script src="js/controller/loginController.js"></script>
+
+  </head>
+  <body>
+        <div class="col-xs-4 col-xs-offset-4" ng-controller="loginController">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Entrar</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label>Usuário</label>
+                        <input id="cUsuario" class="form-control" type="text" ng-model="usuario">
+                    </div>
+                    <div class="form-group">
+                        <label>Senha</label>
+                        <input id="cSenha" class="form-control" type="password" ng-model="senha">
+                    </div>
+
+                    {{erro}}
+
+                    <div class="form-group">
+                        <button class="btn btn-block btn-primary" ng-click="click_btnEntrar()">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
